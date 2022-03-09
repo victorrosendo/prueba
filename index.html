@@ -1,27 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi primera página</title>
+    <title>Mi primera web</title>
 </head>
+
 <body>
-    <h1>Hola Mundo</h1>
 
-    <ul>
-        <li>Manzana</li>
-        <li>Pera</li>
-        <li>Mango</li>
-    </ul>
+    <h1>
+        <!--El hr1 es el tipo de codigo para hacer un titulo o subtitulos-->
+        Mi primer heading
+    </h1>
 
-    <h5>Hola mundo denuevo</h5>
-    <!-- Esto es un comentario -->
-    <p>Esto es un párrafo<br>
-    escrito en una<br> etiqueta p</p>
+    <h2>
+        Mi segundo heading
+    </h2>
+    <h3>
+        Mi tercer heading
+    </h3>
+    <p>Aca es donde se puede poner textos </p>
+    <hr>
+    <!---El <hr> sirve para crear una linea para realizar una separacion-->
+    <!--EL <span> sirve para poner etiquetas y darle a cierta parte de tu texto color o algo para destacarlo con lenguaje de css-->
+    <p>Aca es la separacion del texto de arriba, y esto de aca es para marcar<span style ="color:blue"> este texto</span>  
+        <br>
+        <!--El <br> sirve para hacer un espacio-->
+        con una etiqueta
+    </p>
+    <!--El <a> Sirve para poder crear hiper vinculos y se le debe dar una propiedad con el href="" y ahi ingresar a la parte donde te redigira si se presciona el hipervinculo-->
+    <!--El target="_blank sirve para al momento de prescionar el hipervinculo se abra en una nueva pestaña y no recarge la pestaña actual en la que nos encontramos "-->
+    <a target="_blank" href="https://www.google.cl">ir a google</a>
+    <!--Para poner una imagen se usa el <img src="" y la ubicacion o link de donde esta la imagen dentro de esa etiqueta se le pueden cambiar los valores de altura y ancho con height y width>-->
+    <img  src="img/messi chiquito.jpg" width="90" />
+    <form>
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Nombre" />
+        <!--El type sirve para darle distintos tipos de datos o seleccionables al input ya sea  un checkbox ,password,email,radio,y un file para subir un archivo-->
+        <!--El placeholder es para poner un texto en gris dentro del input para indicar al usuario lo que debe ir ahi-->
+        <br>
+        <label for="apellido">Apellido</label>
+        <input type="text" id="apellido" name="apellido" placeholder="Apellido" />
+        <br>
+        <textarea cols ="50" rows="10" id="comentario" placeholder="Ingrese comentario" name="comentario"></textarea>
 
-    <img src="imagenes/descarga.jpg" alt="No hay imagen"><br>
+    </form>
 
-    <a href="http://www.youtube.com" target="_blank">Ir a Youtube</a>
 </body>
+
 </html>
